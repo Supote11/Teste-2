@@ -7,7 +7,7 @@
 <link href="favicon.png" rel="icon" type="image/png"/>
 <link href="style.css" rel="stylesheet"/>
 <meta content="Diretório institucional de ramais e contatos da Prefeitura de Barueri." name="description"/></head>
-<body>
+<body data-section="habitacao">
 <header class="site-header">
 <div class="brand-row brand-row-habt"><img alt="Secretaria de Habitação — Prefeitura de Barueri" src="logo-habitacao.svg"/></div>
 <div class="page-intro"><span class="eyebrow">DIRETÓRIO INSTITUCIONAL</span><h1>Habitação</h1><p>Ramais e contatos da Secretaria da Habitação.</p></div>
@@ -21,372 +21,77 @@
 <div class="toolbar"><div class="filter-controls"><label class="filter-field search-field">Pesquisar<div class="search-container"><input aria-label="Pesquisar na lista" autocomplete="off" id="searchInput" placeholder="Nome, ramal ou setor" type="search"/></div></label><label class="filter-field">Piso<select aria-label="Filtrar por piso" id="floorFilter"><option value="">Todos os pisos</option></select></label><label class="filter-field">Departamento<select aria-label="Filtrar por departamento" id="departmentFilter"><option value="">Todos os departamentos</option></select></label></div><div aria-live="polite" class="result-count" id="resultCount"></div></div>
 <div class="table-card"><div class="table-scroll">
 <table id="phoneTable">
-<tr class="table-heading">
+
+<!-- Adicione os dados da segunda página aqui -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<thead><tr class="table-heading">
 <th>Responsável</th>
 <th>Ramal</th>
 <th>Departamento</th>
 <th>Piso</th>
-</tr>
-<!-- Adicione os dados da segunda página aqui -->
-<tr>
-<td data-label="Responsável">Acacio De Sousa Abreu Jr</td>
-<td data-label="Ramal">207</td>
-<td data-label="Departamento">Secretário</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Carolina Cipolla Gerevini</td>
-<td data-label="Ramal">248</td>
-<td data-label="Departamento">Secretária Adjunta</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Fernada Mendes</td>
-<td data-label="Ramal">226</td>
-<td data-label="Departamento">Gabinete</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Leandro De Carvalho Almeida</td>
-<td data-label="Ramal">229</td>
-<td data-label="Departamento">Assessoria Técnica</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Maria Marta Vicente</td>
-<td data-label="Ramal">171</td>
-<td data-label="Departamento">Assessoria Técnica</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Daniel Cipolla</td>
-<td data-label="Ramal">249</td>
-<td data-label="Departamento">Comunicação/Gabinete</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Diengo Vinicius Madeira Moreno </td>
-<td data-label="Ramal">249</td>
-<td data-label="Departamento">Comunicação/Gabinete</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Gabriel Jubilato Magalhaes</td>
-<td data-label="Ramal">249</td>
-<td data-label="Departamento">Comunicação/Gabinete</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Felipe Dos Santos Brasil</td>
-<td data-label="Ramal">249</td>
-<td data-label="Departamento">Comunicação/Gabinete</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Evely Rodrigues Ol. Salles</td>
-<td data-label="Ramal">149</td>
-<td data-label="Departamento">Administrativo</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Marcos Batistas Gouvea</td>
-<td data-label="Ramal">192</td>
-<td data-label="Departamento">Administrativo</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Adriana Herman</td>
-<td data-label="Ramal">276</td>
-<td data-label="Departamento">Aluguel Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Vitor Hugo Almeida Santana</td>
-<td data-label="Ramal">276</td>
-<td data-label="Departamento">Aluguel Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Estagiarios</td>
-<td data-label="Ramal">161/276</td>
-<td data-label="Departamento">Administrativo</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Henrique Emanoel Simoes</td>
-<td data-label="Ramal">192</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Suellen Ingrid Moreira Dos S.L.Lima</td>
-<td data-label="Ramal">166</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Ezequias Ribeiro Da Silva</td>
-<td data-label="Ramal">136</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Bruna Carvalho Tenorio Da Silva</td>
-<td data-label="Ramal">136</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Suzana Satie Abe Cunha</td>
-<td data-label="Ramal">166</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Bianca De Santis</td>
-<td data-label="Ramal">242</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">João Batistas Cavalcante</td>
-<td data-label="Ramal">242</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Lenadro Henrique</td>
-<td data-label="Ramal">242</td>
-<td data-label="Departamento">Morar Bem</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Estagiários </td>
-<td data-label="Ramal">166</td>
-<td data-label="Departamento">Morar Bem </td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Rubens Lopes</td>
-<td data-label="Ramal">120</td>
-<td data-label="Departamento">Pós Regularização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Rosangela Carvalho</td>
-<td data-label="Ramal">120</td>
-<td data-label="Departamento">Pós Regularização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Oswaldo Leite</td>
-<td data-label="Ramal">204</td>
-<td data-label="Departamento">Pós Regularização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Martha Maria</td>
-<td data-label="Ramal">204</td>
-<td data-label="Departamento">Pós Regularização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Marcel Kraide</td>
-<td data-label="Ramal">120/204</td>
-<td data-label="Departamento">Pós Regularização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Paulo Ribeiro </td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Wladimir Simons</td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Silvio Pereira</td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Kimberly Weyne</td>
-<td data-label="Ramal">195</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Julio Cesar</td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">João Batista</td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Antonio Alcides</td>
-<td data-label="Ramal">178</td>
-<td data-label="Departamento">Fiscalização</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Larisa O de Jesus</td>
-<td data-label="Ramal">188</td>
-<td data-label="Departamento">RH</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Brenda Lorrayne</td>
-<td data-label="Ramal">188</td>
-<td data-label="Departamento">RH</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">estagiária</td>
-<td data-label="Ramal">188</td>
-<td data-label="Departamento">RH</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Neimá Aparecido</td>
-<td data-label="Ramal">221</td>
-<td data-label="Departamento">Cadastro</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Tais Mendes</td>
-<td data-label="Ramal">221</td>
-<td data-label="Departamento">Cadastro</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Ana Claudia</td>
-<td data-label="Ramal">138</td>
-<td data-label="Departamento">Cadastro</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Julia Cunha</td>
-<td data-label="Ramal">165</td>
-<td data-label="Departamento">Cadastro</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Estagiária</td>
-<td data-label="Ramal">138</td>
-<td data-label="Departamento">Cadastro</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Jessica Ragonha</td>
-<td data-label="Ramal">147</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Camila De Queiroz</td>
-<td data-label="Ramal">213</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Erica Cristina</td>
-<td data-label="Ramal">247</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Estagiários</td>
-<td data-label="Ramal">213</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Gabriel Ishimaru</td>
-<td data-label="Ramal">134</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Jessica De Freitas</td>
-<td data-label="Ramal">247</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Mariellen Gomes</td>
-<td data-label="Ramal">134</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Paulo Jose</td>
-<td data-label="Ramal">185</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Sergio Baganha</td>
-<td data-label="Ramal">185</td>
-<td data-label="Departamento">Reurb</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Andreia Dos Santos</td>
-<td data-label="Ramal">208</td>
-<td data-label="Departamento">A.Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Mercedes Jardin</td>
-<td data-label="Ramal">182</td>
-<td data-label="Departamento">A.Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Simone Batista</td>
-<td data-label="Ramal">233</td>
-<td data-label="Departamento">A.Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Daiane Gonçalves </td>
-<td data-label="Ramal">143</td>
-<td data-label="Departamento">A.Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Claudia Cristina</td>
-<td data-label="Ramal">143</td>
-<td data-label="Departamento">A.Social</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Iara Francisco</td>
-<td data-label="Ramal">198</td>
-<td data-label="Departamento">Atendimento</td>
-<td data-label="Piso">2º</td>
-</tr>
-<tr>
-<td data-label="Responsável">Thiago Da Silva</td>
-<td data-label="Ramal">179</td>
-<td data-label="Departamento">Atendimento</td>
-<td data-label="Piso">2º</td>
-</tr>
-</table>
+</tr></thead><tbody id="phoneTableBody"></tbody></table>
 </div></div>
 <p class="empty-state" hidden="" id="emptyState">Nenhum contato encontrado. Tente outra busca.</p>
 </main>
 <footer class="site-footer">Diretório de contatos · Consulte a equipe responsável para confirmar atualizações.</footer>
-<script src="script.js"></script>
-</body>
+
+<script src="data-loader.js"></script></body>
 </html>
