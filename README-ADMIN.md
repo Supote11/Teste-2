@@ -16,3 +16,7 @@
 - Configurado para proprietário `Supote11`, repositório `Teste-2`, branch `main` e arquivo `ramais.json`.
 - Requer conexão à internet e permissão de gravação no token.
 - O site oficial não é alterado por este pacote.
+
+
+### Campos da lista Geral
+A lista Geral usa os campos `local`, `endereco`, `telefone` e `responsavel`. Os registros existentes foram migrados mantendo seus dados: `equipamento` virou `local` e `coordenador` virou `responsavel`.

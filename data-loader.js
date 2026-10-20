@@ -8,21 +8,21 @@
   const floorFilter = document.getElementById('floorFilter');
   const departmentFilter = document.getElementById('departmentFilter');
   const fields = section === 'geral'
-    ? ['equipamento','endereco','telefone','coordenador']
+    ? ['local','endereco','telefone','responsavel']
     : ['responsavel','ramal','departamento','piso'];
   const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
 
   fetch('./ramais.json')
     .then(response => { if (!response.ok) throw new Error('Não foi possível carregar ramais.json'); return response.json(); })
     .then(database => {
-      const sortKey = section === 'geral' ? 'equipamento' : 'responsavel';
+      const sortKey = section === 'geral' ? 'local' : 'responsavel';
       const contacts = [...(database[section] || [])].sort((a, b) => String(a[sortKey] || '').localeCompare(String(b[sortKey] || ''), 'pt-BR', { sensitivity: 'base' }));
       tbody.replaceChildren();
       for (const contact of contacts) {
         const tr = document.createElement('tr');
         for (const field of fields) {
           const td = document.createElement('td');
-          td.dataset.label = ({responsavel:'Responsável',ramal:'Ramal',departamento:'Departamento',piso:'Piso',equipamento:'Equipamento',endereco:'Endereço',telefone:'Telefone',coordenador:'Coordenador'})[field];
+          td.dataset.label = ({responsavel:'Responsável',ramal:'Ramal',departamento:'Departamento',piso:'Piso',local:'Local',endereco:'Endereço',telefone:'Telefone',responsavel:'Responsável'})[field];
           td.textContent = contact[field] ?? '';
           tr.append(td);
         }
