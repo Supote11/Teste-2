@@ -1,22 +1,5 @@
-# Diretório de ramais com banco JSON — cópia de revisão
+# Diretório de ramais — repositório de teste
 
-## O que mudou
-- Todos os contatos foram extraídos das três páginas HTML recebidas e reunidos em `ramais.json`.
-- As páginas `index.html`, `habt.html` e `geral.html` mantêm a estrutura visual e carregam seus registros a partir do JSON.
-- `data-loader.js` monta as tabelas, busca, filtros e contagem de resultados.
-- Quantidade extraída: SADS 98, Habitação 59, Geral 11 (168 registros no total).
+Este pacote foi preparado para o repositório `https://github.com/Supote11/Teste-2`. O site público lê `ramais.json`. O painel administrativo fica em `admin.html`, e a API privada é implantada separadamente como Cloudflare Worker.
 
-## Executar no Windows
-1. Extraia todo o ZIP para uma pasta.
-2. Dê dois cliques em `run.bat`. É necessário ter Python 3 instalado.
-3. O navegador abrirá `http://127.0.0.1:8765/index.html`.
-
-Não abra as páginas com duplo clique diretamente no HTML: o navegador bloqueia o `fetch` do JSON em `file://`. Use `run.bat`.
-
-## Como atualizar os dados
-Edite `ramais.json` com um editor de texto, mantendo a estrutura JSON válida. As três seções são `sads`, `habitacao` e `geral`. No GitHub Pages, os dados são somente leitura para os visitantes; para publicar alterações, envie o JSON atualizado ao repositório.
-
-Esta é uma cópia de revisão. Nada foi publicado nem alterado no site original.
-
-## Painel administrativo (opcional)
-Consulte `README-ADMIN.md` para configurar o painel `admin.html` com uma API autenticada no Cloudflare Worker. Não basta esconder o link: as credenciais e o token do GitHub precisam ficar nos secrets do Worker. A configuração do painel ainda precisa ser preenchida antes do uso.
+**Nenhuma alteração foi publicada automaticamente no GitHub.** Envie os arquivos somente para o repositório de teste após conferir o conteúdo. Consulte `README-ADMIN.md` para configurar a API.

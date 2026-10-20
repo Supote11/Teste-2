@@ -16,13 +16,13 @@ Crie um fine-grained personal access token restrito **somente ao repositório de
 
 1. Crie um Worker no painel Cloudflare e publique o conteúdo de `worker.js`.
 2. Em **Settings → Variables and Secrets**, configure as variáveis comuns:
-   - `GITHUB_OWNER`: seu usuário/organização do GitHub.
-   - `GITHUB_REPO`: nome exato do repositório de teste.
+   - `GITHUB_OWNER`: `Supote11`.
+   - `GITHUB_REPO`: `Teste-2`.
    - `GITHUB_BRANCH`: `main` (ou a branch que publica o site).
    - `GITHUB_FILE_PATH`: `ramais.json` se estiver na raiz.
-   - `ALLOWED_ORIGIN`: somente a origem do GitHub Pages, por exemplo `https://SEU_USUARIO.github.io` (sem `/ramais-teste-json/`).
+   - `ALLOWED_ORIGIN`: `https://supote11.github.io` (sem `/Teste-2/`).
 3. Configure como **secrets** `GITHUB_TOKEN`, `ADMIN_USER`, `ADMIN_PASSWORD` e `SESSION_SECRET`.
-   - Use senha longa e exclusiva.
+   - Configure `ADMIN_USER` como `SADSADM`. Configure `ADMIN_PASSWORD` como a senha inicial escolhida para o painel, mas não salve essa senha em arquivos ou no repositório; prefira trocá-la por uma senha exclusiva mais forte antes de uso real.
    - `SESSION_SECRET` deve ser uma chave aleatória forte, com pelo menos 32 bytes. Não reutilize a senha administrativa.
 4. Publique o Worker e copie a URL HTTPS dele.
 
@@ -34,7 +34,7 @@ Edite `admin-config.js` no repositório de teste e substitua `https://SUBSTITUA-
 
 Envie os arquivos do pacote para a raiz do **repositório de teste já publicado**: arquivos originais do pacote, `admin.html`, `admin.js`, `admin-config.js`, `worker.js` (o Worker deve ser publicado separadamente no Cloudflare) e este README. O `worker.js` no repositório é código-fonte, não contém credenciais.
 
-Abra `https://SEU_USUARIO.github.io/NOME-DO-REPOSITORIO/admin.html`. A página não aparece nos menus públicos, mas o endereço por si só não é controle de segurança: a API exige usuário/senha e token de sessão. A autenticação protege as operações de leitura/gravação da API; o JSON público continua visível porque o diretório é público.
+Abra `https://supote11.github.io/Teste-2/admin.html` (desde que o GitHub Pages esteja habilitado para esse repositório). A página não aparece nos menus públicos, mas o endereço por si só não é controle de segurança: a API exige usuário/senha e token de sessão. A autenticação protege as operações de leitura/gravação da API; o JSON público continua visível porque o diretório é público.
 
 ## O que o painel faz
 
