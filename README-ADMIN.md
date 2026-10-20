@@ -16,7 +16,3 @@
 - Configurado para proprietário `Supote11`, repositório `Teste-2`, branch `main` e arquivo `ramais.json`.
 - Requer conexão à internet e permissão de gravação no token.
 - O site oficial não é alterado por este pacote.
-
-
-## Escopo do painel
-Este painel permite adicionar, editar e excluir ramais apenas nas listas SADS e Habitação. A seção Geral é mantida no JSON e continua disponível no site público, mas não é editável pelo painel. Ao salvar, os dados de Geral são preservados sem alterações.
