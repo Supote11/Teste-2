@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Administração de Ramais</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.admin-wrap{max-width:1100px;margin:2rem auto;padding:0 1rem}.admin-card{background:#fff;border:1px solid #ddd;border-radius:14px;padding:1.25rem;margin:1rem 0;box-shadow:0 4px 16px #0000000a}.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem}.admin-grid label{display:flex;flex-direction:column;gap:.35rem;font-weight:600}.admin-grid input,.admin-grid select{padding:.75rem;border:1px solid #bbb;border-radius:8px;font:inherit}.admin-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}.admin-btn{padding:.7rem 1rem;border:0;border-radius:8px;cursor:pointer;font-weight:700;background:#32214d;color:#fff}.admin-btn.secondary{background:#e9e5ee;color:#292035}.admin-btn.danger{background:#a62235}.admin-btn:disabled{opacity:.5;cursor:not-allowed}.admin-status{padding:.75rem 1rem;border-radius:8px;background:#f2f0f5;margin:1rem 0}.admin-status.error{background:#fff0f0;color:#8b1727}.admin-status.success{background:#eaf8ee;color:#17632d}.admin-table-wrap{overflow:auto}.admin-table{width:100%;border-collapse:collapse}.admin-table th,.admin-table td{text-align:left;padding:.65rem;border-bottom:1px solid #eee;white-space:nowrap}.admin-table th{background:#f5f3f7}.admin-table button{margin-right:.35rem}.hidden{display:none!important}.admin-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.muted{color:#625d69;font-size:.92rem}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="page-intro"><span class="eyebrow">ÁREA RESTRITA</span><h1>Administração de ramais</h1><p>Gerencie os registros do diretório de teste.</p></div></header>
+<main class="admin-wrap">
+<section id="loginCard" class="admin-card"><h2>Acesso administrativo</h2><p class="muted">Entre com o usuário e a senha configurados no serviço administrativo.</p><form id="loginForm"><div class="admin-grid"><label>Usuário<input id="username" autocomplete="username" required></label><label>Senha<input id="password" type="password" autocomplete="current-password" required></label></div><div class="admin-actions"><button class="admin-btn" type="submit">Entrar</button></div></form></section>
+<section id="app" class="hidden">
+<div class="admin-head"><div><h2>Gerenciar contatos</h2><p class="muted">As alterações são gravadas no arquivo ramais.json do repositório configurado.</p></div><button class="admin-btn secondary" id="logoutBtn" type="button">Sair</button></div>
+<div id="status" class="admin-status" role="status">Carregando dados…</div>
+<section class="admin-card"><h3 id="formTitle">Adicionar contato</h3><form id="contactForm"><div class="admin-grid"><label>Lista<select id="section" required><option value="sads">SADS</option><option value="habitacao">Habitação</option><option value="geral">Geral</option></select></label><label id="nameLabel">Responsável<input id="nameField" required maxlength="160"></label><label id="phoneLabel">Ramal<input id="phoneField" required maxlength="40"></label><label id="deptLabel">Departamento<input id="deptField" maxlength="160"></label><label id="floorLabel">Piso<input id="floorField" maxlength="80"></label></div><div class="admin-actions"><button class="admin-btn" type="submit" id="saveBtn">Salvar contato</button><button class="admin-btn secondary hidden" type="button" id="cancelEdit">Cancelar edição</button><button class="admin-btn secondary" type="button" id="newBtn">Limpar formulário</button></div></form></section>
+<section class="admin-card"><div class="admin-head"><h3>Contatos cadastrados</h3><input id="filterList" placeholder="Filtrar contatos…" aria-label="Filtrar contatos" style="padding:.7rem;border:1px solid #bbb;border-radius:8px"></div><p class="muted" id="listCount"></p><div class="admin-table-wrap"><table class="admin-table"><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table></div></section>
+</section>
+</main>
+<script src="admin-config.js"></script><script src="admin.js"></script>
+</body></html>

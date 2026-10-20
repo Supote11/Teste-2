@@ -15,7 +15,8 @@
   fetch('./ramais.json')
     .then(response => { if (!response.ok) throw new Error('Não foi possível carregar ramais.json'); return response.json(); })
     .then(database => {
-      const contacts = database[section] || [];
+      const sortKey = section === 'geral' ? 'equipamento' : 'responsavel';
+      const contacts = [...(database[section] || [])].sort((a, b) => String(a[sortKey] || '').localeCompare(String(b[sortKey] || ''), 'pt-BR', { sensitivity: 'base' }));
       tbody.replaceChildren();
       for (const contact of contacts) {
         const tr = document.createElement('tr');

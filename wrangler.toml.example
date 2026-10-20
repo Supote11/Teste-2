@@ -1,0 +1,10 @@
+name = "ramais-admin-api"
+main = "worker.js"
+compatibility_date = "2026-10-20"
+
+[vars]
+GITHUB_OWNER = "SEU_USUARIO_GITHUB"
+GITHUB_REPO = "NOME_DO_REPOSITORIO_DE_TESTE"
+GITHUB_BRANCH = "main"
+GITHUB_FILE_PATH = "ramais.json"
+ALLOWED_ORIGIN = "https://SEU_USUARIO_GITHUB.github.io"

@@ -17,3 +17,6 @@ Não abra as páginas com duplo clique diretamente no HTML: o navegador bloqueia
 Edite `ramais.json` com um editor de texto, mantendo a estrutura JSON válida. As três seções são `sads`, `habitacao` e `geral`. No GitHub Pages, os dados são somente leitura para os visitantes; para publicar alterações, envie o JSON atualizado ao repositório.
 
 Esta é uma cópia de revisão. Nada foi publicado nem alterado no site original.
+
+## Painel administrativo (opcional)
+Consulte `README-ADMIN.md` para configurar o painel `admin.html` com uma API autenticada no Cloudflare Worker. Não basta esconder o link: as credenciais e o token do GitHub precisam ficar nos secrets do Worker. A configuração do painel ainda precisa ser preenchida antes do uso.
