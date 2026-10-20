@@ -947,70 +947,70 @@
   ],
   "geral": [
     {
-      "local": "Conselho tutelar 1",
+      "equipamento": "Conselho tutelar 1",
       "endereco": "R. Rogélio Cabeza Castro, 116 - 118 - Jardim Alberto, Barueri - SP, 06433-230",
       "telefone": "3164-9572",
-      "responsavel": "Cristiana"
+      "coordenador": "Cristiana"
     },
     {
-      "local": "Conselho tutelar 2",
+      "equipamento": "Conselho tutelar 2",
       "endereco": "R. Profa. Elvira Lefévre Sales Nemer, 178 - Jardim Sao Pedro, Barueri - SP, 06402-190",
       "telefone": "3164-9553",
-      "responsavel": "Paulo Henrique"
+      "coordenador": "Paulo Henrique"
     },
     {
-      "local": "CRAS Jardim Belva",
+      "equipamento": "CRAS Jardim Belva",
       "endereco": "Rua Casemiro de Abreu, 329 – Jd. Belval7",
       "telefone": "3164-9738",
-      "responsavel": "Fabiana Turina"
+      "coordenador": "Fabiana Turina"
     },
     {
-      "local": "CRAS Jardim Silveira",
+      "equipamento": "CRAS Jardim Silveira",
       "endereco": "Av. Pres. Kennedy, 125 – Jd. Silveira",
       "telefone": "3164-9571",
-      "responsavel": "Domingos Franchini Filho"
+      "coordenador": "Domingos Franchini Filho"
     },
     {
-      "local": "CRAS Parque Imperial",
+      "equipamento": "CRAS Parque Imperial",
       "endereco": "Rua Pero Vaz de Caminha, 08 – Pq. Imperial",
       "telefone": "3164-1043",
-      "responsavel": "Luciana Abate Gasparini da Silva"
+      "coordenador": "Luciana Abate Gasparini da Silva"
     },
     {
-      "local": "CRAS Engenho Novo",
+      "equipamento": "CRAS Engenho Novo",
       "endereco": "Rua Capitão Francisco César, 180 – Engenho Novo",
       "telefone": "3164-9570",
-      "responsavel": "Queila Leite Santana"
+      "coordenador": "Queila Leite Santana"
     },
     {
-      "local": "CRAS Jardim Mutinga",
+      "equipamento": "CRAS Jardim Mutinga",
       "endereco": "Rua Nova Aurora, 549 – Jardim Mutinga",
       "telefone": "3164-9762",
-      "responsavel": "Regiane Curvelo Luz Encarnação"
+      "coordenador": "Regiane Curvelo Luz Encarnação"
     },
     {
-      "local": "CRAS Jardim Paulista",
+      "equipamento": "CRAS Jardim Paulista",
       "endereco": "Av. Marginal Direita, 1.054 – Jardim Paulista",
       "telefone": "3164-9736",
-      "responsavel": "Maria Elidivânea da Silva"
+      "coordenador": "Maria Elidivânea da Silva"
     },
     {
-      "local": "CREAS",
+      "equipamento": "CREAS",
       "endereco": "Av. 26 de Março, 1.463 – Jd. São Pedro",
       "telefone": "4198-5992/4198-8909",
-      "responsavel": "Maria Elidivânea da Silva"
+      "coordenador": "Maria Elidivânea da Silva"
     },
     {
-      "local": "Horta da Gente",
+      "equipamento": "Horta da Gente",
       "endereco": "Av. Dr. Dib Sauaia Neto - Alphaville Industrial (Portaria 2) Parque Ecológico do Tietê- CEP:  06401-160",
       "telefone": "5570-2004",
-      "responsavel": "Joana Darc Melo Macena"
+      "coordenador": "Joana Darc Melo Macena"
     },
     {
-      "local": "Parque da Maturidade José Dias da Silva",
+      "equipamento": "Parque da Maturidade José Dias da Silva",
       "endereco": "Rua Indianópolis, 123 – Parque Santa Luzia",
       "telefone": "4706-3820/3821/3825",
-      "responsavel": "Fábio Smilari"
+      "coordenador": "Fábio Smilari"
     }
   ]
 }
