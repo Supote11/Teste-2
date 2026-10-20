@@ -1,654 +1,625 @@
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#e6d5f4">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#e6d5f4" name="theme-color"/>
 <title>Ramais SADS | Diretório de contatos</title>
-<link rel="icon" type="image/png" href="Design_sem_nome__2_-removebg-preview.png">
-<link rel="stylesheet" href="style.css">
-</head>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
+<meta content="Diretório institucional de ramais e contatos da Prefeitura de Barueri." name="description"/></head>
 <body>
 <header class="site-header">
-<div class="brand-row"><img src="ASSISTÊNCIA E DESENVOLVIMENTO SOCIAL - ESCURO (2).PNG" alt="Assistência e Desenvolvimento Social"></div>
-<div class="page-intro"><h1>SADS</h1><p>Assistência e Desenvolvimento Social · Consulte ramais e contatos com rapidez.</p></div>
-<nav class="pagination" aria-label="Seções do diretório">
-<a href="index.html" class="active" aria-current="page">SADS</a>
+<div class="brand-row"><img alt="Assistência e Desenvolvimento Social" src="logo-sads.png"/></div>
+<div class="page-intro"><span class="eyebrow">DIRETÓRIO INSTITUCIONAL</span><h1>SADS</h1><p>Assistência e Desenvolvimento Social · Consulte ramais e contatos com rapidez.</p></div>
+<nav aria-label="Seções do diretório" class="pagination">
+<a aria-current="page" class="active" href="index.html">SADS</a>
 <a href="habt.html">Habitação</a>
 <a href="geral.html">Geral</a>
 </nav>
 </header>
 <main class="directory">
-<div class="toolbar"><div class="filter-controls"><label class="filter-field search-field">Pesquisar<div class="search-container"><input type="search" id="searchInput" placeholder="Nome, ramal ou setor" aria-label="Pesquisar na lista" autocomplete="off"></div></label><label class="filter-field">Piso<select id="floorFilter" aria-label="Filtrar por piso"><option value="">Todos os pisos</option></select></label><label class="filter-field">Departamento<select id="departmentFilter" aria-label="Filtrar por departamento"><option value="">Todos os departamentos</option></select></label></div><div class="result-count" id="resultCount" aria-live="polite"></div></div>
+<div class="toolbar"><div class="filter-controls"><label class="filter-field search-field">Pesquisar<div class="search-container"><input aria-label="Pesquisar na lista" autocomplete="off" id="searchInput" placeholder="Nome, ramal ou setor" type="search"/></div></label><label class="filter-field">Piso<select aria-label="Filtrar por piso" id="floorFilter"><option value="">Todos os pisos</option></select></label><label class="filter-field">Departamento<select aria-label="Filtrar por departamento" id="departmentFilter"><option value="">Todos os departamentos</option></select></label></div><div aria-live="polite" class="result-count" id="resultCount"></div></div>
 <div class="table-card"><div class="table-scroll">
 <table id="phoneTable">
-            <tr>
-                <th>Responsável</th>
-                <th>Ramal</th>
-                <th>Departamento</th>
-                <th>piso</th>
-            </tr>
-        <tr>
-            <td>Aaron</td>
-            <td>100</td>
-            <td>Telefonia</td>
-            <td>Térreo</td>
-        </tr>
-             <tr>
-            <td>Aldir</td>
-            <td>133</td>
-            <td>Técnicos-SUAS</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Alessandra</td>
-            <td>115</td>
-            <td>Projetos-Fundo Social-Coordenação</td>
-            <td>1º</td>
-        </tr>
-               <tr>
-            <td>Aline</td>
-            <td>220</td>
-            <td>Projetos</td>
-            <td>1º</td>
-        </tr>
-          <tr>
-            <td>Aluguel Social - Recepção</td>
-            <td>216</td>
-            <td>Aluguel Social</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Aluguel Social-Técnico</td>
-            <td>183</td>
-            <td>Aluguel Social - Técnicos</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Amanda</td>
-            <td>205</td>
-            <td>SUAS - Conselhos</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>Amanda Reis</td>
-            <td>116</td>
-            <td>SUAS - Depto. Técnico - Assistente Social</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Ana Kelly</td>
-            <td>201</td>
-            <td>Espaço Colaborativo</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Ana Paula</td>
-            <td>145</td>
-            <td>Proteção Social Especial</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Andréia Martins</td>
-            <td>219</td>
-            <td>Administração</td>
-            <td>2º</td>
-        </tr>
-             <tr>
-            <td>Anselmo/Miguel/Sergio</td>
-            <td>174</td>
-            <td>Manutenção</td>
-            <td>Térreo</td>
-        </tr>
-             <tr>
-            <td>Artur/Dani</td>
-            <td>159</td>
-            <td>Deposito</td>
-            <td>Térreo</td>
-        </tr>
-            <tr>
-            <td>Atendimento</td>
-            <td>140</td>
-            <td>Atendimento Serviço Social</td>
-            <td>Térreo</td>
-        </tr>
-            <tr>
-            <td>Bazar</td>
-            <td>118</td>
-            <td>Espaço Colaborativo</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Bruna</td>
-            <td>177</td>
-            <td>Compras</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Carminha</td>
-            <td>175</td>
-            <td>Administração</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Cibele</td>
-            <td>246</td>
-            <td>Cozinha - Mães Cuidadoras</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Cida Galvão</td>
-            <td>124</td>
-            <td>Gabinete Secretária</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Cidaura</td>
-            <td>142</td>
-            <td>Gabinete Secretária</td>
-            <td>2º</td>
-        </tr>
-            <tr>
-            <td>Claudia</td>
-            <td>144</td>
-            <td>Copa-Gabinete</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Clayton</td>
-            <td>176</td>
-            <td>Compras</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>cozinha-Refeitório</td>
-            <td>125</td>
-            <td>Cozinha refeitório</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>Cozinha/Projetos</td>
-            <td>240</td>
-            <td>Curso</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>Cristina</td>
-            <td>168</td>
-            <td>Telefonia</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Damaris</td>
-            <td>241</td>
-            <td>SUAS-Conselho</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Dani</td>
-            <td>163</td>
-            <td>Depósito</td>
-            <td>Térreo</td>
-        </tr>
-
-        <tr>
-            <td>Denise</td>
-            <td>180</td>
-            <td>Cozinha - Coordenação</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Denison</td>
-            <td>102</td>
-            <td>Telefonia</td>
-            <td>Térreo</td>
-        </tr>
-       <tr>
-            <td>Deusdetti/Suelen</td>
-            <td>243</td>
-            <td>Núcleo de Moda</td>
-            <td>1º</td>
-        </tr>
-        <tr>
-            <td>Divani/Benê</td>
-            <td>103</td>
-            <td>Recepção - Gabinete</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Dayana</td>
-            <td>109</td>
-            <td>Gabinete Secretária</td>
-            <td>2º</td>
-        </tr>
-
-             <tr>
-            <td>Edson</td>
-            <td>254</td>
-            <td>Núcleo de Modas - Coordenação</td>
-            <td>1º</td>
-        </tr>
-
-         <tr>
-            <td>Eduardo Campos</td>
-            <td>173</td>
-            <td>SUAS - Prestação de contas </td>
-            <td>2º</td>
-        </tr>
-       <tr>
-            <td>Eduardo Vaz</td>
-            <td>193</td>
-            <td>Suas - CadÚnico - Vigilância - Cad.Brasil</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Eliane/Virgínia</td>
-            <td>156</td>
-            <td>Atendimento Serviçõ Social</td>
-            <td>Térreo</td>
-        </tr>
-         <tr>
-            <td>Eliane</td>
-            <td>141</td>
-            <td>SUAS - Prestação de contas</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Elisangela</td>
-            <td>167</td>
-            <td>Admnistração-Apoio Administrativo</td>
-            <td>2º</td>
-        </tr>
-
-      <tr>
-            <td>Eloá</td>
-            <td>258</td>
-            <td>Contrato Gestão</td>
-            <td>2º</td>
-        </tr>
-
-       <tr>
-            <td>Elisangela(Eli)</td>
-            <td>225</td>
-            <td>Núcleo de Modas - Coordenação</td>
-            <td>1º</td>
-        </tr>
-        <tr>
-            <td>Elizama</td>
-            <td>212</td>
-            <td>Gabinete da Pres.FSSB</td>
-            <td>2º</td>
-        </tr>
-       <tr>
-            <td>Erica Dra.</td>
-            <td>123</td>
-            <td>Coordenação</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Felipe</td>
-            <td>210</td>
-            <td>Compras</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Francisca</td>
-            <td>200</td>
-            <td>Proteção Social Básica</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Geane</td>
-            <td>186</td>
-            <td>Alugel Social</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Gessé/Janaina</td>
-            <td>184</td>
-            <td>Recepção Térreo</td>
-            <td>Térreo </td>
-        </tr>
-       <tr>
-            <td>Gilson</td>
-            <td>117</td>
-            <td>Suas-Recepção</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Giovana</td>
-            <td>155</td>
-            <td>Aluguel Social</td>
-            <td>Térreo</td>
-        </tr>
-         <tr>
-            <td>Grace</td>
-            <td>152</td>
-            <td>Proteção Social Especial-Coordenação</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Grazi</td>
-            <td>172</td>
-            <td>Suas - Administrativo</td>
-            <td>2º</td>
-        </tr>
-            <tr>
-            <td>Guarda Municipal</td>
-            <td>222</td>
-            <td>Guarita 1</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Guilherme</td>
-            <td>237</td>
-            <td>SUAS-ADM/Recepção</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Janaina</td>
-            <td>214</td>
-            <td>Suas - CadÚnico - Vigiância - Cad.Brasil</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Joabe/Tiago/Elenilda</td>
-            <td>146</td>
-            <td>Almoxarifado</td>
-            <td>Térreo</td>
-        </tr>
-            <tr>
-            <td>José</td>
-            <td>217</td>
-            <td>Contrato Gestão</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>kelly</td>
-            <td>132</td>
-            <td>Proteção Especial - Coordenação</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Leando Dr.</td>
-            <td>215</td>
-            <td>Juridico Suas</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Lucas</td>
-            <td>101</td>
-            <td>Déposito - Coordenação</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Lucas/Marcelo</td>
-            <td>154</td>
-            <td>Informática</td>
-            <td>1º</td>
-        </tr>
-      <tr>
-            <td>Luciana</td>
-            <td>211</td>
-            <td>Contrato Gestão</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Mari</td>
-            <td>153</td>
-            <td>Compras</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>Marcela</td>
-            <td>203</td>
-            <td>SUAS - Depto. Técnico - Assistente Social</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Marcelo/Milton/Paulo</td>
-            <td>232</td>
-            <td>Depósito</td>
-            <td>Térreo</td>
-        </tr>
-    <tr>
-            <td>Maria José</td>
-            <td>191</td>
-            <td>Telefonia</td>
-            <td>Térreo</td>
-        </tr>
-      <tr>
-            <td>Maria Vicentina</td>
-            <td>106</td>
-            <td>SUAS - Prestação de contas</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Mariana</td>
-            <td>114</td>
-            <td>SUAS - Coordenação</td>
-            <td>2º</td>
-        </tr>
-            <tr>
-            <td>Marlene</td>
-            <td>187</td>
-            <td>Bazar FS</td>
-            <td>Térreo</td>
-        </tr>
-       <tr>
-            <td>Marta Souto</td>
-            <td>236</td>
-            <td>Aluguel Social</td>
-            <td>Térreo</td>
-        </tr>
-     <tr>
-            <td>Meire</td>
-            <td>245</td>
-            <td>Eventos e Parcerias</td>
-            <td>2º</td>
-        </tr>
-            <tr>
-            <td>Michele</td>
-            <td>260 </td>
-            <td>Proteção especial</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Motoristas</td>
-            <td>230</td>
-            <td>Motoristas</td>
-            <td>Térreo</td>
-        </tr>
-       <tr>
-            <td>Osvana</td>
-            <td>235</td>
-            <td>Atendimento - Coordenação</td>
-            <td>Térreo</td>
-        </tr>
-      <tr>
-            <td>Paloma/Silvia</td>
-            <td>158</td>
-            <td>Atendimento Serviço Social</td>
-            <td>Térreo</td>
-        </tr>
-       <tr>
-            <td>Patricia</td>
-            <td>148</td>
-            <td>Profesp Elite Aprendiz - Coordenação</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Paula Neto</td>
-            <td>170</td>
-            <td>Comunicação e Eventos</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Priscila</td>
-            <td>244</td>
-            <td>Projetos-Fundo social</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Recep.Projetos/Cursos</td>
-            <td>199</td>
-            <td>Dep.Projetos</td>
-            <td>1º</td>
-        </tr>
-        <tr>
-            <td>Regina</td>
-            <td>194</td>
-            <td>Aluguel Social</td>
-            <td>Térreo</td>
-        </tr>
-        <tr>
-            <td>Regina</td>
-            <td>238</td>
-            <td>Suas - Depto. Técnico</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Renato Galvão</td>
-            <td>250</td>
-            <td>Secretario Adjunto</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Renato/Mendes</td>
-            <td>234</td>
-            <td>Gabinete 1° Dama</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Ricardo Santos</td>
-            <td>228</td>
-            <td>Acessoria</td>
-            <td>2º</td>
-        </tr>
-    <tr>
-            <td>Ronaldo</td>
-            <td>128</td>
-            <td>Administração - Coordenação</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Ronaldo/França/Paulo</td>
-            <td>206</td>
-            <td>Guarita</td>
-            <td>Térreo</td>
-        </tr>
-     <tr>
-            <td>Rony</td>
-            <td>259</td>
-            <td>RH</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Rosa</td>
-            <td>189</td>
-            <td>Profesp Elite Aprendiz</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Rose</td>
-            <td>181</td>
-            <td>Recursos Humanos</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Roseli</td>
-            <td>110</td>
-            <td>SUAS - Prestação de contas - Supervisão</td>
-            <td>2º</td>
-        </tr>
-      <tr>
-            <td>Samuel</td>
-            <td>119</td>
-            <td>SUAS - Administrativo</td>
-            <td>2º</td>
-        </tr>
-    <tr>
-            <td>Shamira</td>
-            <td>112</td>
-            <td>Gabinete da Pres. FSSB</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Shirlei</td>
-            <td>231</td>
-            <td>SUAS - Prestação decontas</td>
-            <td>2º</td>
-        </tr>
-     <tr>
-            <td>Stefan Dr.</td>
-            <td>252</td>
-            <td>Procurador</td>
-            <td>2º</td>
-        </tr>
-    <tr>
-            <td>Thais</td>
-            <td>157</td>
-            <td>SUAS - Prestação de contas</td>
-            <td>2º</td>
-        </tr>
-        <tr>
-            <td>Tereza</td>
-            <td>162</td>
-            <td>Projetos</td>
-            <td>1º</td>
-        </tr>
-    <tr>
-            <td>Tiago</td>
-            <td>160</td>
-            <td>Deposito</td>
-            <td>Térreo</td>
-        </tr>
-    <tr>
-            <td>Vanessa</td>
-            <td>122</td>
-            <td>SUAS - Docs Gestão</td>
-            <td>2º</td>
-        </tr>
-         <tr>
-            <td>Vanessa/Marcos</td>
-            <td>256</td>
-            <td>Ótica</td>
-            <td>1º</td>
-        </tr>
-        <tr>
-            <td>Zigomar</td>
-            <td>227</td>
-            <td>Entrega de cestas - FS</td>
-            <td>Térreo</td>
-        </tr>
-      </table>
+<tr class="table-heading">
+<th>Responsável</th>
+<th>Ramal</th>
+<th>Departamento</th>
+<th>piso</th>
+</tr>
+<tr>
+<td data-label="Responsável">Aaron</td>
+<td data-label="Ramal">100</td>
+<td data-label="Departamento">Telefonia</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Aldir</td>
+<td data-label="Ramal">133</td>
+<td data-label="Departamento">Técnicos-SUAS</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Alessandra</td>
+<td data-label="Ramal">115</td>
+<td data-label="Departamento">Projetos-Fundo Social-Coordenação</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Aline</td>
+<td data-label="Ramal">220</td>
+<td data-label="Departamento">Projetos</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Aluguel Social - Recepção</td>
+<td data-label="Ramal">216</td>
+<td data-label="Departamento">Aluguel Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Aluguel Social-Técnico</td>
+<td data-label="Ramal">183</td>
+<td data-label="Departamento">Aluguel Social - Técnicos</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Amanda</td>
+<td data-label="Ramal">205</td>
+<td data-label="Departamento">SUAS - Conselhos</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Amanda Reis</td>
+<td data-label="Ramal">116</td>
+<td data-label="Departamento">SUAS - Depto. Técnico - Assistente Social</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Ana Kelly</td>
+<td data-label="Ramal">201</td>
+<td data-label="Departamento">Espaço Colaborativo</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Ana Paula</td>
+<td data-label="Ramal">145</td>
+<td data-label="Departamento">Proteção Social Especial</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Andréia Martins</td>
+<td data-label="Ramal">219</td>
+<td data-label="Departamento">Administração</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Anselmo/Miguel/Sergio</td>
+<td data-label="Ramal">174</td>
+<td data-label="Departamento">Manutenção</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Artur/Dani</td>
+<td data-label="Ramal">159</td>
+<td data-label="Departamento">Deposito</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Atendimento</td>
+<td data-label="Ramal">140</td>
+<td data-label="Departamento">Atendimento Serviço Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Bazar</td>
+<td data-label="Ramal">118</td>
+<td data-label="Departamento">Espaço Colaborativo</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Bruna</td>
+<td data-label="Ramal">177</td>
+<td data-label="Departamento">Compras</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Carminha</td>
+<td data-label="Ramal">175</td>
+<td data-label="Departamento">Administração</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Cibele</td>
+<td data-label="Ramal">246</td>
+<td data-label="Departamento">Cozinha - Mães Cuidadoras</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Cida Galvão</td>
+<td data-label="Ramal">124</td>
+<td data-label="Departamento">Gabinete Secretária</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Cidaura</td>
+<td data-label="Ramal">142</td>
+<td data-label="Departamento">Gabinete Secretária</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Claudia</td>
+<td data-label="Ramal">144</td>
+<td data-label="Departamento">Copa-Gabinete</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Clayton</td>
+<td data-label="Ramal">176</td>
+<td data-label="Departamento">Compras</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">cozinha-Refeitório</td>
+<td data-label="Ramal">125</td>
+<td data-label="Departamento">Cozinha refeitório</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Cozinha/Projetos</td>
+<td data-label="Ramal">240</td>
+<td data-label="Departamento">Curso</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Cristina</td>
+<td data-label="Ramal">168</td>
+<td data-label="Departamento">Telefonia</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Damaris</td>
+<td data-label="Ramal">241</td>
+<td data-label="Departamento">SUAS-Conselho</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Dani</td>
+<td data-label="Ramal">163</td>
+<td data-label="Departamento">Depósito</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Denise</td>
+<td data-label="Ramal">180</td>
+<td data-label="Departamento">Cozinha - Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Denison</td>
+<td data-label="Ramal">102</td>
+<td data-label="Departamento">Telefonia</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Deusdetti/Suelen</td>
+<td data-label="Ramal">243</td>
+<td data-label="Departamento">Núcleo de Moda</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Divani/Benê</td>
+<td data-label="Ramal">103</td>
+<td data-label="Departamento">Recepção - Gabinete</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Dayana</td>
+<td data-label="Ramal">109</td>
+<td data-label="Departamento">Gabinete Secretária</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Edson</td>
+<td data-label="Ramal">254</td>
+<td data-label="Departamento">Núcleo de Modas - Coordenação</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Eduardo Campos</td>
+<td data-label="Ramal">173</td>
+<td data-label="Departamento">SUAS - Prestação de contas </td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Eduardo Vaz</td>
+<td data-label="Ramal">193</td>
+<td data-label="Departamento">Suas - CadÚnico - Vigilância - Cad.Brasil</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Eliane/Virgínia</td>
+<td data-label="Ramal">156</td>
+<td data-label="Departamento">Atendimento Serviçõ Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Eliane</td>
+<td data-label="Ramal">141</td>
+<td data-label="Departamento">SUAS - Prestação de contas</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Elisangela</td>
+<td data-label="Ramal">167</td>
+<td data-label="Departamento">Admnistração-Apoio Administrativo</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Eloá</td>
+<td data-label="Ramal">258</td>
+<td data-label="Departamento">Contrato Gestão</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Elisangela(Eli)</td>
+<td data-label="Ramal">225</td>
+<td data-label="Departamento">Núcleo de Modas - Coordenação</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Elizama</td>
+<td data-label="Ramal">212</td>
+<td data-label="Departamento">Gabinete da Pres.FSSB</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Erica Dra.</td>
+<td data-label="Ramal">123</td>
+<td data-label="Departamento">Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Felipe</td>
+<td data-label="Ramal">210</td>
+<td data-label="Departamento">Compras</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Francisca</td>
+<td data-label="Ramal">200</td>
+<td data-label="Departamento">Proteção Social Básica</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Geane</td>
+<td data-label="Ramal">186</td>
+<td data-label="Departamento">Alugel Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Gessé/Janaina</td>
+<td data-label="Ramal">184</td>
+<td data-label="Departamento">Recepção Térreo</td>
+<td data-label="Piso">Térreo </td>
+</tr>
+<tr>
+<td data-label="Responsável">Gilson</td>
+<td data-label="Ramal">117</td>
+<td data-label="Departamento">Suas-Recepção</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Giovana</td>
+<td data-label="Ramal">155</td>
+<td data-label="Departamento">Aluguel Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Grace</td>
+<td data-label="Ramal">152</td>
+<td data-label="Departamento">Proteção Social Especial-Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Grazi</td>
+<td data-label="Ramal">172</td>
+<td data-label="Departamento">Suas - Administrativo</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Guarda Municipal</td>
+<td data-label="Ramal">222</td>
+<td data-label="Departamento">Guarita 1</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Guilherme</td>
+<td data-label="Ramal">237</td>
+<td data-label="Departamento">SUAS-ADM/Recepção</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Janaina</td>
+<td data-label="Ramal">214</td>
+<td data-label="Departamento">Suas - CadÚnico - Vigiância - Cad.Brasil</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Joabe/Tiago/Elenilda</td>
+<td data-label="Ramal">146</td>
+<td data-label="Departamento">Almoxarifado</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">José</td>
+<td data-label="Ramal">217</td>
+<td data-label="Departamento">Contrato Gestão</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">kelly</td>
+<td data-label="Ramal">132</td>
+<td data-label="Departamento">Proteção Especial - Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Leando Dr.</td>
+<td data-label="Ramal">215</td>
+<td data-label="Departamento">Juridico Suas</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Lucas</td>
+<td data-label="Ramal">101</td>
+<td data-label="Departamento">Déposito - Coordenação</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Lucas/Marcelo</td>
+<td data-label="Ramal">154</td>
+<td data-label="Departamento">Informática</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Luciana</td>
+<td data-label="Ramal">211</td>
+<td data-label="Departamento">Contrato Gestão</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Mari</td>
+<td data-label="Ramal">153</td>
+<td data-label="Departamento">Compras</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Marcela</td>
+<td data-label="Ramal">203</td>
+<td data-label="Departamento">SUAS - Depto. Técnico - Assistente Social</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Marcelo/Milton/Paulo</td>
+<td data-label="Ramal">232</td>
+<td data-label="Departamento">Depósito</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Maria José</td>
+<td data-label="Ramal">191</td>
+<td data-label="Departamento">Telefonia</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Maria Vicentina</td>
+<td data-label="Ramal">106</td>
+<td data-label="Departamento">SUAS - Prestação de contas</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Mariana</td>
+<td data-label="Ramal">114</td>
+<td data-label="Departamento">SUAS - Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Marlene</td>
+<td data-label="Ramal">187</td>
+<td data-label="Departamento">Bazar FS</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Marta Souto</td>
+<td data-label="Ramal">236</td>
+<td data-label="Departamento">Aluguel Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Meire</td>
+<td data-label="Ramal">245</td>
+<td data-label="Departamento">Eventos e Parcerias</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Michele</td>
+<td data-label="Ramal">260 </td>
+<td data-label="Departamento">Proteção especial</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Motoristas</td>
+<td data-label="Ramal">230</td>
+<td data-label="Departamento">Motoristas</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Osvana</td>
+<td data-label="Ramal">235</td>
+<td data-label="Departamento">Atendimento - Coordenação</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Paloma/Silvia</td>
+<td data-label="Ramal">158</td>
+<td data-label="Departamento">Atendimento Serviço Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Patricia</td>
+<td data-label="Ramal">148</td>
+<td data-label="Departamento">Profesp Elite Aprendiz - Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Paula Neto</td>
+<td data-label="Ramal">170</td>
+<td data-label="Departamento">Comunicação e Eventos</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Priscila</td>
+<td data-label="Ramal">244</td>
+<td data-label="Departamento">Projetos-Fundo social</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Recep.Projetos/Cursos</td>
+<td data-label="Ramal">199</td>
+<td data-label="Departamento">Dep.Projetos</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Regina</td>
+<td data-label="Ramal">194</td>
+<td data-label="Departamento">Aluguel Social</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Regina</td>
+<td data-label="Ramal">238</td>
+<td data-label="Departamento">Suas - Depto. Técnico</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Renato Galvão</td>
+<td data-label="Ramal">250</td>
+<td data-label="Departamento">Secretario Adjunto</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Renato/Mendes</td>
+<td data-label="Ramal">234</td>
+<td data-label="Departamento">Gabinete 1° Dama</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Ricardo Santos</td>
+<td data-label="Ramal">228</td>
+<td data-label="Departamento">Acessoria</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Ronaldo</td>
+<td data-label="Ramal">128</td>
+<td data-label="Departamento">Administração - Coordenação</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Ronaldo/França/Paulo</td>
+<td data-label="Ramal">206</td>
+<td data-label="Departamento">Guarita</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Rony</td>
+<td data-label="Ramal">259</td>
+<td data-label="Departamento">RH</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Rosa</td>
+<td data-label="Ramal">189</td>
+<td data-label="Departamento">Profesp Elite Aprendiz</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Rose</td>
+<td data-label="Ramal">181</td>
+<td data-label="Departamento">Recursos Humanos</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Roseli</td>
+<td data-label="Ramal">110</td>
+<td data-label="Departamento">SUAS - Prestação de contas - Supervisão</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Samuel</td>
+<td data-label="Ramal">119</td>
+<td data-label="Departamento">SUAS - Administrativo</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Shamira</td>
+<td data-label="Ramal">112</td>
+<td data-label="Departamento">Gabinete da Pres. FSSB</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Shirlei</td>
+<td data-label="Ramal">231</td>
+<td data-label="Departamento">SUAS - Prestação decontas</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Stefan Dr.</td>
+<td data-label="Ramal">252</td>
+<td data-label="Departamento">Procurador</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Thais</td>
+<td data-label="Ramal">157</td>
+<td data-label="Departamento">SUAS - Prestação de contas</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Tereza</td>
+<td data-label="Ramal">162</td>
+<td data-label="Departamento">Projetos</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Tiago</td>
+<td data-label="Ramal">160</td>
+<td data-label="Departamento">Deposito</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+<tr>
+<td data-label="Responsável">Vanessa</td>
+<td data-label="Ramal">122</td>
+<td data-label="Departamento">SUAS - Docs Gestão</td>
+<td data-label="Piso">2º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Vanessa/Marcos</td>
+<td data-label="Ramal">256</td>
+<td data-label="Departamento">Ótica</td>
+<td data-label="Piso">1º</td>
+</tr>
+<tr>
+<td data-label="Responsável">Zigomar</td>
+<td data-label="Ramal">227</td>
+<td data-label="Departamento">Entrega de cestas - FS</td>
+<td data-label="Piso">Térreo</td>
+</tr>
+</table>
 </div></div>
-<p class="empty-state" id="emptyState" hidden>Nenhum contato encontrado. Tente outra busca.</p>
+<p class="empty-state" hidden="" id="emptyState">Nenhum contato encontrado. Tente outra busca.</p>
 </main>
 <footer class="site-footer">Diretório de contatos · Consulte a equipe responsável para confirmar atualizações.</footer>
 <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
