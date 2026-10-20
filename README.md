@@ -1,4 +1,3 @@
-# Diretório de ramais - Teste-2
+# Diretório de ramais — Teste-2
 
-Versão de teste do diretório com dados em `ramais.json` e painel simples em `admin.html`.
-Veja `README-ADMIN.md` para instruções de publicação e limitações.
+Versão de teste com painel administrativo que pode gravar diretamente em `ramais.json` pelo GitHub Contents API. Consulte `README-ADMIN.md` antes de publicar.
