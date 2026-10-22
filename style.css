@@ -129,3 +129,24 @@ th,td { border-bottom-color:#eceef3; }
 table tr:not(.table-heading):hover td { background:#f8faff; }
 .directory:not(.directory-geral) td:nth-child(2),.directory-geral td:nth-child(3) { color:#3156a6; }
 .empty-state { border-color:#d6ddea; background:#fff; }
+
+
+/* Impressão: lista compacta, monocromática e com pouca tabulação */
+.print-button { flex: 0 0 auto; min-height: 42px; padding: 9px 16px; border: 1px solid #cfd5da; border-radius: 9px; background: #fff; color: #202b3c; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; }
+.print-button:hover { background: #f4f6f8; }
+.print-heading, .print-list { display: none; }
+@media print {
+  @page { size: A4 landscape; margin: 6mm; }
+  html, body { margin: 0 !important; padding: 0 !important; color: #000 !important; background: #fff !important; font-family: Arial, sans-serif !important; font-size: 7pt !important; line-height: 1.1 !important; }
+  .site-header, .toolbar, .table-card, .empty-state, .site-footer { display: none !important; }
+  main, main.directory, main.directory-geral { display: block !important; width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .print-heading { display: block !important; margin: 0 0 3mm !important; padding: 0 0 2mm !important; border-bottom: 1px solid #000 !important; }
+  .print-heading h1 { margin: 0 0 1mm !important; color: #000 !important; font-size: 11pt !important; line-height: 1.1 !important; }
+  .print-heading p { margin: 0 !important; font-size: 6.5pt !important; }
+  .print-list { display: block !important; columns: 4 !important; column-gap: 5mm !important; column-rule: .25pt solid #bbb !important; width: 100% !important; }
+  body[data-section="geral"] .print-list { columns: 2 !important; }
+  .print-item { display: block !important; break-inside: avoid !important; margin: 0 0 1.3mm !important; padding: 0 0 .8mm !important; border-bottom: .25pt solid #ccc !important; color: #000 !important; font-size: 6.4pt !important; line-height: 1.12 !important; overflow-wrap: anywhere !important; }
+  .print-item strong { font-weight: 700 !important; }
+  .print-item .print-meta { font-weight: 400 !important; }
+  * { box-shadow: none !important; text-shadow: none !important; background: transparent !important; color: #000 !important; }
+}

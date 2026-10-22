@@ -5,12 +5,39 @@
   const searchInput = document.getElementById('searchInput');
   const resultCount = document.getElementById('resultCount');
   const emptyState = document.getElementById('emptyState');
+  const printButton = document.getElementById('printButton');
+  const printList = document.getElementById('printList');
+  const printHeadingDate = document.querySelector('.print-date');
   const floorFilter = document.getElementById('floorFilter');
   const departmentFilter = document.getElementById('departmentFilter');
   const fields = section === 'geral'
     ? ['equipamento','endereco','telefone','coordenador']
     : ['responsavel','ramal','departamento','piso'];
   const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
+
+  printButton?.addEventListener('click', () => {
+    if (printHeadingDate) printHeadingDate.textContent = `Emitido em ${new Date().toLocaleDateString('pt-BR')}`;
+    if (printList) {
+      printList.replaceChildren();
+      const visibleRows = Array.from(tbody.querySelectorAll('tr')).filter(row => !row.hidden);
+      visibleRows.forEach(row => {
+        const values = Array.from(row.cells).map(cell => cell.textContent.trim());
+        const item = document.createElement('div');
+        item.className = 'print-item';
+        const title = document.createElement('strong');
+        title.textContent = values[0] || '';
+        item.append(title);
+        if (values.length > 1) {
+          const meta = document.createElement('span');
+          meta.className = 'print-meta';
+          meta.textContent = ' — ' + values.slice(1).filter(Boolean).join(' · ');
+          item.append(meta);
+        }
+        printList.append(item);
+      });
+    }
+    window.print();
+  });
 
   fetch('./ramais.json')
     .then(response => { if (!response.ok) throw new Error('Não foi possível carregar ramais.json'); return response.json(); })

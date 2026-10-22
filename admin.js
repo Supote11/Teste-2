@@ -2,7 +2,7 @@
   const $ = id => document.getElementById(id);
   let credentials = null, database = null, editingIndex = null, githubToken = null, fileSha = null, saving = false;
   const GITHUB_OWNER = 'Supote11';
-  const GITHUB_REPO = 'Teste-2';
+  const GITHUB_REPO = 'ramais';
   const GITHUB_BRANCH = 'main';
   const DATA_PATH = 'ramais.json';
   const githubApi = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${DATA_PATH}`;
